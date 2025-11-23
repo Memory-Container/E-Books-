@@ -1,0 +1,201 @@
+
+:root {
+    --primary-red: rgba(228, 15, 10, 1);
+    --light-gray-bg: #f8f9fc;
+    --input-bg: #f6f7f9;
+    --border-color: #e9ecef;
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+}
+.primary {
+    color: white;
+}
+.container2 {
+    border: 2px solid rgba(0, 0, 0, 0.508);
+    color: black;
+    width: 95%;
+    max-width: 1024px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.order-form {
+    width: calc(60% - 15px);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+div {
+    color: inherit;
+}
+label {
+    color: black;
+}
+.box {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.form-group {
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+.form-group label {
+    display: block; 
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px; 
+    line-height: 140%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-primary);
+}
+
+.form-group input::placeholder {
+    color: var(--text-secondary);
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+}
+.author {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    opacity: 100%    ;
+    color: black;
+}
+.desc {
+    opacity: 100%;
+    font-size: 17px;
+    line-height: 140%;
+    font-weight: 400;
+    color: black;
+}
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #003394;
+}
+
+.desc {
+    color: var(--text-secondary);
+}
+
+.product-options {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.option-group {
+    flex: 1;
+}
+
+.option-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.option-group select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #fff; 
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%236c757d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+.product-card {
+    width: calc(40% - 15px);
+    gap: 24px;
+    background-color: #ffffff;
+    .image {
+        background-image: url("./");
+        border-radius: 8px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #00000057;
+        background-position: 50%;
+        height: 100%;
+    }
+}
+.summary-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pagination {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+.top {
+    gap: 8px;
+}
+
+@media (max-width: 1024px) {
+    .order-form,
+    .product-summary {
+        width: 100%;
+    }
+    .product-card {
+        width: 100%;
+        .image {
+            height: 400px;
+            width: 281px;
+            border-radius: 10px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .box {
+            height: unset;
+        }
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

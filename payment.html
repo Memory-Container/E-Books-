@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order</title>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex-r a-center j-center">
+        <div class="container flex-r j-between a-center">
+            <a href="/index.html" class="logo">
+        
+            </a>
+            <menu class="flex-r PC Tablet g30">
+                <a href="#ebook" class="f16 w5">
+                    E-Books
+                </a>
+                <a href="#partner" class="f16 w5">
+                    Our Partners
+                </a>
+                <a href="#faq" class="f16 w5">
+                    FAQ
+                </a>
+            </menu>
+            <div class="flex-r g16">
+                <button class="secondary">
+                    Sign Up
+                </button>
+                <button class="primary">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="flex-c">
+        <div class="container2 flex-r t-flex-cr g10">
+            <div class="order-form">
+                <div class="top flex-c">
+                    <div class="f42 w8 line-110">Book Payment</div>
+                    <div class="f18 w5 line-140">Almost done! Your book is just behind this wall</div>
+                </div>
+    
+                <form type="POST" action="/payment-success.html" class="form">
+                    <div style="width: 100%;">
+                        <div class="form-group">
+                            <label for="address">Card Number</label>
+                            <input type="password" id="address" placeholder="Card Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Card Holder Name</label>
+                            <input type="text" id="amount" placeholder="Card Holder Name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">Expiry Date</label>
+                                <input type="date" id="first-name" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">CVC/CVV2</label>
+                                <input type="password" id="last-name" placeholder="CVC/CVV2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Discount (Optional)</label>
+                            <input style="border-radius: 0px;" placeholder="1234-4567-ABCDEF-CODEREDEEM">
+                        </div>
+                    </div>
+                    <button type="submit" class="primary">Confirm Order</button>
+                </form>
+            </div>
+    
+            <div class="product-card flex-c">
+                <div class="image">
+                </div>
+                <div class="box flex-c between">
+                    <div class="flex-c between g16">
+                        <div class="flex-c g5">
+                            <div class="f24 w8 title" id="name">Shirt</div>
+                            <div class="author">Author: </div>
+                            <div class="genre">
+                                Item Description Here
+                            </div>
+                            <div class="f20 w6 price" id="prices">$132,346.568</div>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-footer">
+                        <span class="pagination">&lt; 1 / 1 &gt;</span>
+                        <button class="secondary">+ Add Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="a-center j-center">
+        <div class="container">
+            <div class="flex-r j-between">
+                <div class="logo">
+                </div>
+                <form  class="flex-r PC Tablet" style="width: 35%; min-width: 400px;">                   
+                    <input type="email" placeholder="Enter your email to get updated">
+                    <button class="primary">Subscribe</button>
+                </form>
+            </div>
+            <hr>
+            <div class="resources flex-r t-flex-c j-between g40">
+                <div class="flex-r m-flex-c g40">
+                    <div class="link-bar">
+                        <div class="link-type">
+                            Resources
+                        </div>
+                        <a href="/index.html#faq" class="link">
+                            FAQ
+                        </a>
+                        <a href="/index.html" class="link">
+                            Terms of Service
+                        </a>
+                        <a href="/index.html" class="link">
+                            Privacy Policy
+                        </a>
+                        <a href="/index.html#ebook" class="link">
+                            E-Book
+                        </a>
+                        <a href="/index.html#partner" class="link">
+                            Our Partners
+                        </a>
+                    </div>
+                    <div class="link-bar">
+                        <div class="link-type">
+                            Contact Information
+                        </div>
+                        <a href="#" class="link">
+                            <!-- Address: Car/47 Pripi Road,  Main Area 1, Garn47 Reality -->
+                             Address: 420/69 Nowhere Road, Main Area 1
+                        </a>
+                        <a href="#" class="link">
+                            Phone Number: 0-1800-BOOKS
+                        </a>
+                        <a href="#" class="link">
+                            Gmail: example123456@gmail.kom
+                        </a>
+                    </div>
+                </div>
+                <div class="link-bar social">
+                    <div class="link-type">
+                        Our Social
+                    </div>
+                    <div class="flex-r g15 a-center">
+                        <img src="./assets/icon/youtube.svg">
+                        <img src="./assets/icon/facebook.svg">
+                        <img src="./assets/icon/instagram.svg">
+                        <img src="./assets/icon/twitter.svg">
+                        <img src="./assets/icon/linkedin.svg">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright f14 line-140 w4">
+                CompanyName @ 202X. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<script src="index.js"></script>
+<script>
+    loadProduct()
+    function setBackground(color) {
+        document.querySelector(".image").style.backgroundColor = `${color}`
+    }
+</script>
+</html>
